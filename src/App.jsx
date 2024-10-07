@@ -1,10 +1,12 @@
 import './App.css'
-import WelcomePage from './components/WelcomePage'
+import WelcomePage from '@/pages/WelcomePage'
+import CounterPage from '@/pages/CounterPage'
 
 function App() {
   return (
     <>
-      <WelcomePage></WelcomePage>
+      {/* <WelcomePage></WelcomePage> */}
+      <CounterPage></CounterPage>
     </>
   )
 }
