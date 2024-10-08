@@ -14,16 +14,16 @@ export default function Counter({ cnt, cntUp, liftUp }) {
       <div className="p-6 flex flex-col bg-white bg-opacity-10 rounded-lg shadow-lg backdrop-filter backdrop-blur-lg">
         <button
           className="px-8 py-3 mb-6 text-lg font-semibold text-white bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full hover:from-purple-600 hover:to-cyan-600 transition-all duration-300 ease-in-out transform hover:scale-105"
-          onClick={() => setCount((count) => count + 1)}
+          onClick={() => liftUp(count)}
         >
-          Count is {count}
+          Data lifting state up ! ⬆️⬆️⬆️
         </button>
 
         <button
           className="px-8 py-3 mb-6 text-lg font-semibold text-white bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full hover:from-purple-600 hover:to-cyan-600 transition-all duration-300 ease-in-out transform hover:scale-105"
-          onClick={() => liftUp(count)}
+          onClick={() => setCount((count) => count + 1)}
         >
-          Data lifting state up ! ⬆️⬆️⬆️
+          Count is {count}
         </button>
 
         <button
